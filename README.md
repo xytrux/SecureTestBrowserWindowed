@@ -6,6 +6,7 @@ This is the SecureTestBrowser kiosk app for chromebooks, But it can run as a nor
 #### ***I DO NOT CONDONE CHEATING USING THIS***
 
 ## How to install?
+##### ***do not download the source code, I have not uploaded all the files yet***
 Download the ZIP file from the [Releases](https://github.com/crossjbly/SecureTestBrowserWindowed/releases) page, then go to `chrome://extensions` and turn on the developer mode toggle, then click load unpacked and right click on the ZIP file then click extract, then click on the folder and then click open. Now you can open it from the launcher.
 
 ## How was this done?
