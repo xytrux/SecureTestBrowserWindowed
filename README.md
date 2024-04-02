@@ -1,6 +1,5 @@
 # SecureTestBrowserWindowed
-
-This is the SecureTestBrowser kiosk app for chromebooks, But it can run as a normal chrome app
+![preview](RunningPreview.png "SecureTestBrowser running as a chrome app on a chromebook")
 
 ### ***DISCLAIMER***
 #### ***I DO NOT CONDONE CHEATING USING THIS***
