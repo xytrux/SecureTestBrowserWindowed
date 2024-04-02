@@ -1,0 +1,46 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"name": "SecureTestBrowser",
+	"description": "Platform for delivering secure assessments",
+	"version": "8.0.0.1",
+	"manifest_version": 2,
+	"permissions": [
+		"webview",
+		"tts",
+		"storage",
+		"audio",
+		"audioCapture",
+		"accessibilityFeatures.modify",
+		"accessibilityFeatures.read",
+		"power",
+		"virtualKeyboard",
+		"https://*/*",
+		"http://*/*",
+		"videoCapture"
+	],
+	"app": {
+		"background": {
+			"scripts": [
+				"background.js"
+			],
+			"persistent": false
+		}
+	},
+	"icons": {
+		"128": "kiosk.png"
+	},
+	"minimum_chrome_version": "35.0.0.0",
+	"kiosk_enabled": false,
+	"kiosk_only": false,
+	"webview": {
+		"partitions": [
+			{
+				"name": "trusted*",
+				"accessible_resources": [
+					"CAI_Logo.png"
+				]
+			}
+		]
+	}
+}

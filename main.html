@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<link href="shared/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="shared/css/masterShell.css" rel="stylesheet" type="text/css" />
+<link href="shared/themes/generic/css/masterShell.css" rel="stylesheet" type="text/css" />
+<style>
+        #errorMessage {
+        background-color: #FF9800;
+        padding: 30px;
+        margin-top: 100px;
+        margin-right: 20%;
+        margin-bottom: 0px;
+        margin-left: 20%;
+        border: 1px solid #FFF;
+        -webkit-box-shadow: 0em 0em 15px #ccc;
+        box-shadow: 0em 0em 15px #ccc;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        color:#fff;
+        }
+        #errorMessage  h2 {
+                font-size:30px;
+        }
+		#listener{
+			height: 0px !important;
+			width: 0px !important;
+			visibility: hidden;
+			overflow: hidden;
+		}
+</style>
+<script type="text/javascript" src="main.js"></script>
+<title>SecureTestChromeExtension</title>
+
+</head>
+
+<body>
+
+  <div id="listener" style="height: 0px;">
+      <embed name="nacl_module" id="nacl_module" width="200" height="200" path="pnacl/Release" src="pnacl/Release/AirSecureTest.nmf" type="application/x-pnacl" style="height: 0px;">
+  </div>
+
+
+  <div id="error" style="display: none;">
+    <div role="banner" id="tds-ot-header">
+      <div id="ot-topBar"></div>
+      <div id="tds-ot-branding">
+        <span id="ot-brand1"> <span id="ot-logo_spot1"></span> <span
+          id="ot-logo_spot2"></span>
+        </span> <span id="ot-brand2"> <span id="ot-logo_spot3"></span> <strong>Student
+            Test</strong> <span id="ot-logo_spot4"></span>
+        </span>
+      </div>
+    </div>
+    <div id="errorMessage">
+      <h2>This app can only be run in kiosk mode</h2>
+    </div>
+  </div>
+
+  <webview id="AIRWebViewContainer" src=""
+    style="width:1024px; height:768px" partition="trusted:application"></webview>
+
+</body>
+</html>
