@@ -978,7 +978,7 @@ window.addEventListener('load', function() {
 
     // Hijack the user agent to make sure that all requests to the server have our
     // CAISecureBrowser string in the UA
-    webviewcontainer.setUserAgentOverride(navigator.userAgent + " CAISecureBrowser/" + manifest.version + uaSuffix);
+    webviewcontainer.setUserAgentOverride("Mozilla/5.0 (X11; CrOS aarch64 14989.85.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 CAISecureBrowser/" + manifest.version + uaSuffix);
 
 
   // When the TDS page is loaded, execute a script to notify the page that we
